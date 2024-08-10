@@ -16,7 +16,7 @@ To list, all the files opened by particular PID.
 =========================================================================================================
 lsof -p PID
 
-* We are unable to unmount the file system. What are the reason behind it ?.
+We are unable to unmount the file system. What are the reason behind it ?.
 =========================================================================================================
 You are in the same directory
 
