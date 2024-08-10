@@ -1,6 +1,16 @@
 
-2:37 How to set a username and password to never expires.
-3:37 Why /etc/passwd and /ete/shadow file cannot be merged into 1 file.
+How to set a username and password to never expires.
+=========================================================================================================
+chage -M -1 mahesh
+
+
+
+
+Why /etc/passwd and /ete/shadow file cannot be merged into 1 file.
+=========================================================================================================
+
+/etc/passwd is text file that can be ready by other application so attacker get hashed password  so to protact this hash password is moved to /etc/shadow file which acccessiable to root.
+
 
 To list, all the files opened by particular PID.
 =========================================================================================================
