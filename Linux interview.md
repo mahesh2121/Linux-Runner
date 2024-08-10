@@ -31,9 +31,33 @@ df -i /ftpusers/
 How to check kernel routing table Information?
 =========================================================================================================
 
+route -n
 
+netstat -rn
 
+ip route
 
-
-=========================================================================================================
 How to set sticky bit and what is the difference b/w smalls and capital S 
+=========================================================================================================
+sticky bit is special permission applied on file and directory than only root and owner of that file or directory can deleteit. Even if others having full permission.
+
+
+Symbolic way:
+
+chmod o+t /opt/dump/
+
+chmod +t /opt/dump/
+
+Numerical way:
+
+chmod 1757 /opt/dump/
+
+To make this setuid executale you have 
+
+chmod 4700 executable
+
+als
+
+s- setuid and executable
+
+S- setuid and non-executable
